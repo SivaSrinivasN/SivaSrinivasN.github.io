@@ -1,74 +1,322 @@
-/* A simple CSS reset to ensure consistency across browsers */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg: #35424a;
+    --header-text: #ffffff;
+    --nav-bg: #e3e3e3;
+    --section-bg: #ffffff;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --link-color: #333;
+    --link-hover: #35424a;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --header-bg: #2c3e50;
+    --header-text: #ffffff;
+    --nav-bg: #34495e;
+    --section-bg: #2d2d2d;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    --link-color: #e0e0e0;
+    --link-hover: #3498db;
+}
+
 body {
-    font-family: 'Arial', sans-serif; /* Sets the font for the whole page */
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333; /* Dark gray text color */
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 20px;
-    max-width: 800px; /* Keeps the content from getting too wide on large screens */
-    margin: 0 auto; /* Centers the content on the page */
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: all 0.3s ease;
 }
 
-header {
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    background-color: #35424a; /* Dark blue-ish background */
-    color: #ffffff; /* White text */
-}
-
+/* Navigation bar at top */
 nav {
-    background-color: #e3e3e3;
-    padding: 1rem 0;
-    text-align: center;
-    margin-bottom: 2rem;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: flex-end; /* Align nav to right */
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
 }
 
 nav a {
-    color: #333;
+    color: var(--header-text);
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    font-size: 0.95rem; /* Added consistent font size */
 }
 
-/* Style the links when you hover over them */
 nav a:hover {
-    color: #35424a;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-section {
-    background: #ffffff; /* White background for content sections */
+/* Theme toggle */
+.theme-toggle {
+    background: var(--header-text);
+    color: var(--header-bg);
+    border: none;
+    padding: 0rem 0rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-left: 2rem;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Main content area */
+main {
+    margin-top: 80px; /* Space for fixed nav */
     padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 5px; /* Slightly rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1, h2, h3 {
-    margin-bottom: 1rem;
-    color: #35424a;
+/* Profile and About section side by side */
+.profile-about-section {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    background: var(--section-bg);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
 }
 
-.project {
+.profile-picture {
+    width: 225px;
+    height: 295px;
+    object-fit: cover;
+    border: 4px solid var(--header-bg);
+    border-radius: 5px; /* Square with slight rounding */
+    flex-shrink: 0;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--header-bg);
+}
+
+.about-content .designation {
+    font-size: 1.1rem;
+    opacity: 0.9;
     margin-bottom: 1.5rem;
+    color: var(--text-color);
 }
 
+.about-content .bio {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+[data-theme="dark"] .about-content h1 {
+    color: var(--link-hover);
+}
+
+
+/* Footer font size adjustment */
 footer {
     text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    background: var(--section-bg);
+    margin-top: 2rem;
+    font-size: 0.9rem; /* Reduced footer text size */
+}
+a {
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+        justify-content: center;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .theme-toggle {
+        margin-left: 1rem;
+    }
+    
+    main {
+        margin-top: 120px;
+        padding: 1rem;
+    }
+    
+    .profile-about-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-content .designation {
+        font-size: 1.1rem;
+    }
+
+    .news-section h2 {
+        font-size: 1.6rem; /* Adjusted for mobile */
+    }
+}
+
+/* News & Updates section */
+.news-section {
+    background: var(--section-bg);
     padding: 1rem;
-    color: #666; /* Medium gray text */
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.news-section h2 {
+    color: var(--header-bg);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: left;
+    border-bottom: 2px solid var(--header-bg);
+    padding-bottom: 0.5rem;
+    width: 100%; /* Ensure full width */
+}
+
+[data-theme="dark"] .news-section h2 {
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
+}
+
+.news-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+[data-theme="dark"] .news-item {
+    border-bottom-color: #444;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.news-date {
+    min-width: 120px;
+    font-weight: bold;
+    color: var(--header-bg);
+    font-size: 0.95rem;
+}
+
+[data-theme="dark"] .news-date {
+    color: var(--link-hover);
+}
+
+.news-content h3 {
+    color: var(--header-bg);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+[data-theme="dark"] .news-content h3 {
+    color: var(--link-hover);
+}
+
+.news-content p {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Responsive design for news section */
+@media (max-width: 368px) {
+    .news-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .news-date {
+        min-width: auto;
+        font-size: 0.5rem;
+    }
+    
+    .news-section h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .news-section {
+        padding: 1.5rem;
+    }
+    
+    .news-content h3 {
+        font-size: 1.2rem;
+    }
 }
