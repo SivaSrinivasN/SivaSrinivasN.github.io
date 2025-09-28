@@ -8,9 +8,18 @@ designation: "PhD Student"
 institution: "Indian Institute of Science"
 institution_url: "https://iisc.ac.in/"
 
-# Simple permalink structure
-permalink: /:title/
+# Navigation - add permalinks here
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: /:title/
 
-# Build settings
-markdown: kramdown
-theme: minima
+# Explicit header pages
+header_pages:
+  - projects.md
+  - contact.md
+  - lectures.md
+  - misc.md
