@@ -5,7 +5,7 @@ title: Home
 
 <!-- Profile picture and About side by side -->
 <section class="profile-about-section">
-    <img src="/assets/images/Srinivas.jpeg" alt="Srinivas Nomula" class="profile-picture">
+    <img src="/Srinivas.jpeg" alt="Srinivas Nomula" class="profile-picture">
     <div class="about-content">
         <h1>Srinivas Nomula</h1>
         <p class="designation">PhD Student | <a href="https://iisc.ac.in/">Indian Institute of Science</a></p>

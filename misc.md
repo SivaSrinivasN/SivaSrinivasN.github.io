@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Miscellaneous
-permalink: /misc/
 ---
 
 # Miscellaneous
