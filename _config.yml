@@ -8,6 +8,11 @@ designation: "PhD Student"
 institution: "Indian Institute of Science"
 institution_url: "https://iisc.ac.in/"
 
+# Add these lines:
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  
 # Navigation - add permalinks here
 defaults:
   - scope:
