@@ -16,7 +16,7 @@ defaults:
     values:
       layout: "default"
       permalink: /:title/
-      plugins: -jekyll-sitemap
+      # plugins: -jekyll-sitemap
 
 # Explicit header pages
 header_pages:
