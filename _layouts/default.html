@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.scss' | relative_url }}">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-            <li><a href="{{ '/lectures/' | relative_url }}">Lectures</a></li>
-            <li><a href="{{ '/misc/' | relative_url }}">Misc</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle">🌙</button>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        <li><a href="{{ '/lectures/' | relative_url }}">Lectures</a></li>
+        <li><a href="{{ '/misc/' | relative_url }}">Misc</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+</nav>
 
     <main>
         {{ content }}
