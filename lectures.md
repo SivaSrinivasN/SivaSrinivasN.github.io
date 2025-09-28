@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Lectures
+permalink: /lectures/
 ---
 
 # Lecture Materials
