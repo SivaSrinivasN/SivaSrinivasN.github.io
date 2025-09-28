@@ -1,0 +1,23 @@
+title: "Srinivas Nomula"
+description: "PhD Student | Indian Institute of Science"
+baseurl: ""
+url: "https://sivasrinivasn.github.io" # Replace with your actual URL
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Custom settings
+name: "Srinivas Nomula"
+designation: "PhD Student"
+institution: "Indian Institute of Science"
+institution_url: "https://iisc.ac.in/"
+
+# Navigation
+header_pages:
+  - projects.md
+  - contact.md
+  - lectures.md
+  - misc.md
