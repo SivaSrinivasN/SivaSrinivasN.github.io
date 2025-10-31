@@ -59,15 +59,23 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <!-- Navigation with Dark Mode Toggle -->
+    <!-- Navigation bar with home on left and other links on right -->
     <nav>
-        <ul>
-            <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-            <li><a href="{{ '/lectures' | relative_url }}">Lectures</a></li>
-            <li><a href="{{ '/misc' | relative_url }}">Misc</a></li>
-        </ul>
-        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <!-- Home button on far left -->
+        <div class="nav-left">
+            <a href="{{ '/' | relative_url }}" class="home-button">Srinivas Nomula</a>
+        </div>
+        
+        <!-- Other navigation links on right -->
+        <div class="nav-right">
+            <ul>
+                <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+                <li><a href="{{ '/lectures' | relative_url }}">Lectures</a></li>
+                <li><a href="{{ '/misc' | relative_url }}">Misc</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
     </nav>
 
     <main>
