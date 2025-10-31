@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -30,6 +30,63 @@
         const themeToggle = document.getElementById('themeToggle');
         const currentTheme = localStorage.getItem('theme') || 'light';
         
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateToggleText();
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateToggleText();
+        });
+        
+        function updateToggleText() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            themeToggle.textContent = currentTheme === 'light' ? '🌙' : '☀️';
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <!-- Navigation with Dark Mode Toggle -->
+    <nav>
+        <ul>
+            <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            <li><a href="{{ '/lectures' | relative_url }}">Lectures</a></li>
+            <li><a href="{{ '/misc' | relative_url }}">Misc</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>© {{ site.time | date: '%Y' }} {{ site.name | default: "Srinivas Nomula" }}. Hosted on GitHub Pages.</p>
+    </footer>
+
+    <!-- Dark Mode JavaScript -->
+    <script>
+        // Dark mode functionality
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Get theme from localStorage or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        
+        // Set initial theme
         document.documentElement.setAttribute('data-theme', currentTheme);
         updateToggleText();
         

@@ -1,27 +1,51 @@
-title: "Srinivas Nomula"
-description: "PhD Student | Indian Institute of Science"
+# title: "Srinivas Nomula"
+# description: "PhD Student | Indian Institute of Science"
+# baseurl: ""
+# url: "https://sivasrinivasn.github.io"
+
+# name: "Srinivas Nomula"
+# designation: "PhD Student"
+# institution: "Indian Institute of Science"
+# institution_url: "https://iisc.ac.in/"
+  
+# # Navigation - add permalinks here
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "pages"
+#     values:
+#       layout: "default"
+#       permalink: /:title/
+#       plugins: 
+#       - jekyll-sitemap
+
+# # Explicit header pages
+# header_pages:
+#   - projects.md
+#   - contact.md
+#   - lectures.md
+#   - misc.md
+
+title: "Srinivas Nomula - Personal Website"
+description: "PhD Student at Indian Institute of Science"
 baseurl: ""
 url: "https://sivasrinivasn.github.io"
+theme: minima
 
+# Custom variables
 name: "Srinivas Nomula"
 designation: "PhD Student"
 institution: "Indian Institute of Science"
 institution_url: "https://iisc.ac.in/"
-  
-# Navigation - add permalinks here
+
+# Collections
+collections:
+  news:
+    output: true
+
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: "news"
     values:
-      layout: "default"
-      permalink: /:title/
-      plugins: 
-      - jekyll-sitemap
-
-# Explicit header pages
-header_pages:
-  - projects.md
-  - contact.md
-  - lectures.md
-  - misc.md
+      layout: "news"
