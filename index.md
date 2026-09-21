@@ -13,6 +13,8 @@ title: "Srinivas Nomula - Personal Website"
             <p>My research focuses on analyzing, and modeling the stochasticity of systems in real time and provide necessary guarantees.</p>
         </div>
         <div class="profile-contact" id="contact" role="group" aria-label="Contact details">
+            <p></p>
+            <p></p>
             <p><strong>Department:</strong> Electrical Communication Engineering</p>
             <p><strong>Institute:</strong> Indian Institute of Science, Bangalore</p>
             <p><strong>Office:</strong> ECE Department, IISc Bangalore</p>
