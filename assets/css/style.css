@@ -403,3 +403,49 @@ a:hover {
         font-size: 1.2rem;
     }
 }
+
+/* Lecture notes: compact lists with section dividers. */
+.lecture-page h1,
+.lecture-page h2 {
+    font-weight: normal;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.65rem;
+    margin-bottom: 1rem;
+}
+
+.lecture-page h1 {
+    font-size: 2rem;
+}
+
+.lecture-page h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+.lecture-page ul {
+    padding-left: 1.5rem;
+}
+
+.lecture-page li {
+    padding: 0.15rem 0;
+    overflow-wrap: anywhere;
+}
+
+.lecture-page a {
+    color: #006b96;
+    text-decoration: none;
+}
+
+[data-theme="dark"] .lecture-page a {
+    color: #40b8df;
+}
+
+.lecture-page a:hover,
+.lecture-page a:focus-visible {
+    text-decoration: underline;
+}
+
+.lecture-status {
+    font-size: 0.9em;
+    font-style: italic;
+}
