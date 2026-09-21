@@ -1,0 +1,4 @@
+<div class="news-item">
+    <time class="news-date" datetime="{{ include.item.date | escape }}">{{ include.item.date | date: "%b %Y" }}</time>
+    <div class="news-content">{{ include.item.text | markdownify }}</div>
+</div>

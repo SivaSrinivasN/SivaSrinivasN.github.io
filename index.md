@@ -17,18 +17,13 @@ title: "Srinivas Nomula - Personal Website"
 
 <section class="news-section">
     <h2>News & Updates</h2>
-    
-    <div class="news-item">
-        <div class="news-date">Aug 2025</div>
-        <div class="news-content">
-            <p>Appointed as a TPC member at <a href="https://www.comsnets.org/index.html">COMSNETS 2026</a></p>
-        </div>
-    </div>
-    
-    <div class="news-item">
-        <div class="news-date">Dec 2024</div>
-        <div class="news-content">
-            <p>Our work on the <a href="https://ece.iisc.ac.in/~parimal/papers/2025/infocom.pdf">power of two in large service marketplaces</a> was accepted at <a href="https://infocom2025.ieee-infocom.org/">IEEE INFOCOM 2025</a></p>
-        </div>
-    </div>
+    {% assign updates = site.data.news | where_exp: "item", "item.date != ''" | sort: "date" | reverse %}
+    {% for item in updates limit:10 %}
+        {% include news-item.html item=item %}
+    {% else %}
+        <p>No news yet.</p>
+    {% endfor %}
+    {% if updates.size > 10 %}
+    <p class="news-navigation"><a class="past-news-button" href="{{ '/news/' | relative_url }}">Past news</a></p>
+    {% endif %}
 </section>

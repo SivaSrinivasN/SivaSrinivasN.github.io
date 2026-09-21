@@ -317,6 +317,7 @@ a:hover {
     text-align: left; /* Ensure text is left-aligned */
 }
 
+.news-section h1,
 .news-section h2 {
     color: var(--header-bg);
     margin-bottom: 0.5rem;
@@ -327,6 +328,7 @@ a:hover {
     width: 100%; /* Ensure full width */
 }
 
+[data-theme="dark"] .news-section h1,
 [data-theme="dark"] .news-section h2 {
     color: var(--link-hover);
     border-bottom-color: var(--link-hover);
@@ -375,6 +377,31 @@ a:hover {
     line-height: 1.5;
     margin: 0;
     font-size: 0.95rem;
+}
+
+.news-intro {
+    margin-bottom: 1rem;
+}
+
+.news-navigation {
+    margin-top: 1rem;
+}
+
+.past-news-button {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.past-news-button:hover {
+    text-decoration: underline;
+}
+
+.past-news-button:focus-visible {
+    outline: 2px solid var(--link-hover);
+    outline-offset: 3px;
 }
 
 /* Responsive design for news section */
