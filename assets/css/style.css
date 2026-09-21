@@ -30,6 +30,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
@@ -143,6 +147,8 @@ nav a {
 
 /* Main content area */
 main {
+    flex: 1 0 auto;
+    width: 100%;
     margin-top: 80px; /* Space for fixed nav */
     padding: 2rem;
     max-width: 1200px;
@@ -198,7 +204,7 @@ main {
 }
 
 
-/* Footer font size adjustment */
+/* Compact profile icons on the Contact page */
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -210,15 +216,14 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid currentColor;
-    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
 }
 
 .social-links svg {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 
 .social-links a:focus-visible {
@@ -227,6 +232,7 @@ main {
 }
 
 footer {
+    flex-shrink: 0;
     text-align: center;
     padding: 2rem;
     color: var(--text-color);
@@ -246,10 +252,6 @@ a:hover {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .social-links {
-        justify-content: center;
-    }
-
     nav {
         padding: 1rem;
         justify-content: center;
