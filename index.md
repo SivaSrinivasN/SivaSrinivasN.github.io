@@ -15,9 +15,6 @@ title: "Srinivas Nomula - Personal Website"
         <div class="profile-contact" id="contact" role="group" aria-label="Contact details">
             <p></p>
             <p></p>
-            <p><strong>Department:</strong> Electrical Communication Engineering</p>
-            <p><strong>Institute:</strong> Indian Institute of Science, Bangalore</p>
-            <p><strong>Office:</strong> ECE Department, IISc Bangalore</p>
             <div class="social-links" role="group" aria-label="Email and academic profiles">
                 <a href="mailto:sivasrinivas@iisc.ac.in" aria-label="Email Srinivas Nomula" title="Email me">
                     <svg width="18" height="18" viewBox="0 0 24 24"
