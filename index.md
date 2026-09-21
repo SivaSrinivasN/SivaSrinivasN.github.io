@@ -9,8 +9,8 @@ title: "Srinivas Nomula - Personal Website"
         <h1>Srinivas Nomula</h1>
         <p class="designation">PhD Student | <a href="https://iisc.ac.in/">Indian Institute of Science</a></p>
         <div class="bio">
-            <p>Hello! I'm a 4th year PhD student in the ECE Dept., IISc. I'm interested to work on Networking, Machine learning and GPU energy minimization.</p>
-            <p>My research focuses on developing efficient algorithms for network optimization and energy-aware computing systems. I'm passionate about bridging the gap between theoretical computer science and practical applications.</p>
+            <p>Hello! I'm a 5th year PhD student in the ECE Dept., IISc. I'm interested to work on Networking, Machine learning and GPU energy minimization.</p>
+            <p>My research focuses on analyzing, and modeling the stochasticity of systems in real time and provide necessary guarantees.</p>
         </div>
     </div>
 </section>
