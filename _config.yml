@@ -14,6 +14,8 @@ institution_url: "https://iisc.ac.in/"
 social_links:
   google_scholar: "https://scholar.google.com/citations?user=MnM6VHoAAAAJ&hl=en"
   linkedin: "https://in.linkedin.com/in/srinivas-nomula-748a2316b"
+  orcid: "https://orcid.org/0009-0007-7944-6716"
+  cv: "/uploads/cv.pdf"
 
 # Collections
 collections:
