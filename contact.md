@@ -10,9 +10,6 @@ permalink: /contact/
 **Department:** Electrical Communication Engineering  
 **Institute:** Indian Institute of Science, Bangalore
 
-## Office:
-ECE Department, IISc Bangalore
-
 {% if site.social_links.google_scholar != empty or site.social_links.linkedin != empty %}
 <div class="social-links" role="group" aria-label="Academic and social profiles">
     {% if site.social_links.google_scholar != empty %}
@@ -27,3 +24,6 @@ ECE Department, IISc Bangalore
     {% endif %}
 </div>
 {% endif %}
+
+## Office:
+ECE Department, IISc Bangalore
