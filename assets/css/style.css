@@ -204,7 +204,13 @@ main {
 }
 
 
-/* Compact profile icons on the Contact page */
+/* Contact details and compact profile icons beneath the introduction. */
+.profile-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+
 .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +258,10 @@ a:hover {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .profile-contact .social-links {
+        justify-content: center;
+    }
+
     nav {
         padding: 1rem;
         justify-content: center;
