@@ -10,6 +10,11 @@ designation: "PhD Student"
 institution: "Indian Institute of Science"
 institution_url: "https://iisc.ac.in/"
 
+# Profile icons appear once their URLs are supplied.
+social_links:
+  google_scholar: "https://scholar.google.com/citations?user=MnM6VHoAAAAJ&hl=en"
+  linkedin: "https://in.linkedin.com/in/srinivas-nomula-748a2316b"
+
 # Collections
 collections:
   news:
