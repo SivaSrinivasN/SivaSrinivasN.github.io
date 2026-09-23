@@ -62,7 +62,18 @@
     <nav>
         <!-- Home button on far left -->
         <div class="nav-left">
-            <a href="{{ '/' | relative_url }}" class="home-button">Srinivas Nomula</a>
+            {% if page.url == '/' or page.url == '/index.html' %}
+            <a href="{{ '/' | relative_url }}" class="home-button" aria-label="Home" aria-current="page" title="Home">
+                <svg width="22" height="22" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="1.75"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true" focusable="false">
+                    <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/>
+                </svg>
+            </a>
+            {% else %}
+            <a href="{{ '/' | relative_url }}" class="home-button">{{ site.name | escape }}</a>
+            {% endif %}
         </div>
         
         <!-- Other navigation links on right -->

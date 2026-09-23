@@ -64,6 +64,9 @@ nav {
 }
 
 .home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--header-text);
     text-decoration: none;
     font-weight: bold;
@@ -76,6 +79,11 @@ nav {
 .home-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
+}
+
+.home-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 /* Right section - Navigation links and theme toggle */
