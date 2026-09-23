@@ -192,7 +192,7 @@ main {
 
 .profile-picture {
     width: 225px;
-    height: 260px;
+    height: auto;
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 5px; /* Square with slight rounding */
@@ -311,7 +311,7 @@ a:hover {
     
     .profile-picture {
         width: 125px;
-        height: 125px;
+        height: auto;
         margin: 0 auto;
     }
 }
