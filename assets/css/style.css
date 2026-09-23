@@ -13,21 +13,21 @@
     --nav-bg: #e3e3e3;
     --border-color: #dedede;
     --muted-color: #666;
-    --section-bg: #fafafa;
+    --section-bg: var(--bg-color);
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     --link-color: #27658a;
     --link-hover: #194b6b;
 }
 
 [data-theme="dark"] {
-    --bg-color: #252525;
+    --bg-color: #202020;
     --text-color: #e0e0e0;
     --header-bg: #2c3e50;
     --header-text: #ffffff;
     --nav-bg: #34495e;
     --border-color: #393939;
     --muted-color: #aaa;
-    --section-bg: #2d2d2d;
+    --section-bg: var(--bg-color);
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     --link-color: #78b9df;
     --link-hover: #a4d6f3;
@@ -186,7 +186,7 @@ main {
     gap: 3rem;
     align-items: flex-start;
     margin-bottom: 2.5rem;
-    background: var(--section-bg);
+    background: transparent;
     padding: 1rem 0;
 }
 
@@ -341,7 +341,7 @@ a:hover {
 
 /* News & Updates section */
 .news-section {
-    background: var(--section-bg);
+    background: transparent;
     padding: 0;
     text-align: left; /* Ensure text is left-aligned */
 }
