@@ -20,14 +20,14 @@
 }
 
 [data-theme="dark"] {
-    --bg-color: #1a1a1a;
+    --bg-color: #252525;
     --text-color: #e0e0e0;
     --header-bg: #2c3e50;
     --header-text: #ffffff;
     --nav-bg: #34495e;
     --border-color: #393939;
     --muted-color: #aaa;
-    --section-bg: #1a1a1a;
+    --section-bg: #2d2d2d;
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     --link-color: #78b9df;
     --link-hover: #a4d6f3;
@@ -310,8 +310,8 @@ a:hover {
     }
     
     .profile-picture {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
         margin: 0 auto;
     }
 }
