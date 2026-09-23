@@ -63,12 +63,14 @@
         <!-- Home button on far left -->
         <div class="nav-left">
             {% if page.url == '/' or page.url == '/index.html' %}
-            <a href="{{ '/' | relative_url }}" class="home-button" aria-label="Home" aria-current="page" title="Home">
+            <a href="{{ '/' | relative_url }}" class="home-button home-icon-button" aria-label="Home" aria-current="page" title="Home">
                 <svg width="22" height="22" viewBox="0 0 24 24"
                      fill="none" stroke="currentColor" stroke-width="1.75"
                      stroke-linecap="round" stroke-linejoin="round"
                      aria-hidden="true" focusable="false">
-                    <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/>
+                    <path d="M5 10v9a1.5 1.5 0 0 0 1.5 1.5h11A1.5 1.5 0 0 0 19 19v-9l-7-6Z"
+                          fill="currentColor" fill-opacity="0.12" stroke="none"/>
+                    <path d="m3 10.5 8-7a1.5 1.5 0 0 1 2 0l8 7M5 9v10a1.5 1.5 0 0 0 1.5 1.5H9v-6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v6h2.5A1.5 1.5 0 0 0 19 19V9"/>
                 </svg>
             </a>
             {% else %}

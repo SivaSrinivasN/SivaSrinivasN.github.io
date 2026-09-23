@@ -86,6 +86,18 @@ nav {
     outline-offset: 3px;
 }
 
+.home-icon-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 11px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.home-icon-button svg {
+    display: block;
+}
+
 /* Right section - Navigation links and theme toggle */
 .nav-right {
     display: flex;
