@@ -9,8 +9,8 @@ title: "Srinivas Nomula - Personal Website"
         <h1>Srinivas Nomula</h1>
         <p class="designation">PhD Student | <a href="https://iisc.ac.in/">Indian Institute of Science</a></p>
         <div class="bio">
-            <p>I’m a fifth-year PhD student in ECE at IISc, studying networking, machine learning, and energy-efficient GPU computing.</p>
-            <p>My research models uncertainty in real-world systems and develops performance guarantees.</p>
+            <p>I’m a fifth-year PhD student in ECE at IISc, studying networking, machine learning, and energy-efficient GPU computing. My research models uncertainty in real-world systems and develops performance guarantees.</p>
+            <p>Prior to joining IISc, I finished my bachelors in Electronics and Communication Engineering from [IIIT Tiruchirappalli](https://iiitt.ac.in/).</p>
         </div>
         <div class="profile-contact" id="contact" role="group" aria-label="Contact details">
             <div class="social-links" role="group" aria-label="Email and academic profiles">
