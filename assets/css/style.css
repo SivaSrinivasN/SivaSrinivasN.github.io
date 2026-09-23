@@ -192,7 +192,7 @@ main {
 
 .profile-picture {
     width: 225px;
-    height: 295px;
+    height: 260px;
     object-fit: cover;
     border: 1px solid var(--border-color);
     border-radius: 5px; /* Square with slight rounding */
