@@ -4,6 +4,10 @@
 # Markdown links work in text: [link title](https://example.com).
 # An empty date keeps an entry unpublished until its date is supplied.
 
+- date: "2026-09-23"
+  text: >-
+    Appointed as a TPC member at [COMSNETS 2027](https://www.comsnets.org/).
+
 - date: "2026-07-15"
   text: >-
     Conference article titled Distributed 20 questions on Machine Learning
