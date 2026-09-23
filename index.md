@@ -9,12 +9,10 @@ title: "Srinivas Nomula - Personal Website"
         <h1>Srinivas Nomula</h1>
         <p class="designation">PhD Student | <a href="https://iisc.ac.in/">Indian Institute of Science</a></p>
         <div class="bio">
-            <p>Hello! I'm a 5th year PhD student in the ECE Dept., IISc. I'm interested to work on Networking, Machine learning and GPU energy minimization.</p>
-            <p>My research focuses on analyzing, and modeling the stochasticity of systems in real time and provide necessary guarantees.</p>
+            <p>I’m a fifth-year PhD student in ECE at IISc, studying networking, machine learning, and energy-efficient GPU computing.</p>
+            <p>My research models uncertainty in real-world systems and develops performance guarantees.</p>
         </div>
         <div class="profile-contact" id="contact" role="group" aria-label="Contact details">
-            <p></p>
-            <p></p>
             <div class="social-links" role="group" aria-label="Email and academic profiles">
                 <a href="mailto:sivasrinivas@iisc.ac.in" aria-label="Email Srinivas Nomula" title="Email me">
                     <svg width="18" height="18" viewBox="0 0 24 24"
